@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  /* background-color: #fecbda; */
+  font-family: 'Comfortaa', cursive;
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem 1rem;
+
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container {
+  background-color: #ffc2da;
+  width: 95%;
+  margin-top: 8rem;
+  box-shadow: 20px 20px 60px #d9a5b9, -20px -20px 60px #ffdffb;
+
+  border-radius: 1rem ;
+}
+
+.content {
+  margin-top: rem;
+  text-align: center;
+  padding: 3rem;
+}
+
+.content-1 {
+  text-align: center;
+}
+
+.java{
+  color: red;
+}
+
+.inputs-range {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.image {
+  border: 10px solid rgb(2, 2, 2);
+  margin-top: 3rem;
+  width: 41rem;
+  height: 377px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
