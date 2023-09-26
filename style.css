@@ -14,7 +14,7 @@ body {
   /* background-color: #fecbda; */
   font-family: 'Comfortaa', cursive;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   padding: 2rem 1rem;
 
   overflow-x: hidden;
@@ -28,7 +28,7 @@ body {
 .container {
   background-color: #ffc2da;
   width: 95%;
-  margin-top: 8rem;
+  /* margin-top: 8rem; */
   box-shadow: 20px 20px 60px #d9a5b9, -20px -20px 60px #ffdffb;
 
   border-radius: 1rem ;
@@ -57,6 +57,7 @@ body {
 }
 
 .image-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,13 +65,20 @@ body {
   margin-bottom: 1rem;
 }
 
-.image {
-  border: 10px solid rgb(2, 2, 2);
+.image{
   margin-top: 3rem;
-  width: 41rem;
-  height: 377px;
+  width: 35rem;
+  /* height: 377px; */
+  /* filter: blur(1.5rem); */
 }
 
+.image-slide{
+  border: 10px solid rgb(2, 2, 2);
+  /* border-color: rgb(26,162,103); */
+  border-radius: 6px;
+  /* padding: 10rem; */
+}
+  
 img {
   width: 100%;
   height: auto;

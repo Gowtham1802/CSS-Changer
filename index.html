@@ -12,26 +12,28 @@
 
     <div class="inputs-range">
       <label for="width">Width:</label>
-      <input type="range" id="width-slide" value="100" min="0" max="100" oninput="changeopacity(this.value/100)">
+      <input type="range" id="width-slide" value="35" min="0" max="65">
 
       <label for="radius">Border radius:</label>
-      <input type="range" id="radius-slide" value="100" min="0" max="100">
+      <input type="range" id="radius-slide" value="6" min="0" max="76">
 
 
-      <label for="color">Base color</label>
+      <label for="color-box">Base color</label>
       <input type="color"
-      id="color-box" >
+      id="color-box" value="#ff0000">
 
       <label for="padding">Padding:</label>
-      <input type="range" id="padding-slide" value="100" min="0" max="100">
+      <input type="range" id="padding-slide" value="10" min="10" max="150">
 
 
       <label for="blur">Blur:</label>
       <input type="range"
-      id="blurr-slide" value="100" min="0" max="100">
+      id="blur-slide" value="0" min="0" max="25">
     </div>
     <div class="image-container" >
-    <div class="image" ><img id="building" src="./img/IMG_20220121_191137_828.jpg" alt=""></div>
+      <div class="image" >
+        <img id="image-slide" src="./img/IMG_20220121_191137_828.jpg" alt="img" class="image-slide">
+      </div>
     </div>
   </div>
 

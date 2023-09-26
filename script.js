@@ -1,26 +1,37 @@
 'use script';
-const input = document.querySelector("input");
+// element to be selected
+const inputWidthEle = document.querySelector("#width-slide");
 
-input.oninput = () => {
-  document.body.style.backgroundColor = input.Value;
-};
+const inputRadiusEle = document.querySelector("#radius-slide");
 
+const inputColorEle = document.querySelector("#color-box");
 
-const inputs = document.querySelectorAll(".css-controller input");
+const inputPaddingEle = document.querySelector("#padding-slide");
 
-inputs.forEach((input) => input.addEventListener("change", update));
-inputs.forEach((input) => input.addEventListener("mousemove", update));
+const inputBlurEle = document.querySelector("#blur-slide");
 
-function update() {
-  const suffix = this.dataset.sizing || "";
-  document.documentElement.style.setProperty(
-    `--${this.name}`,
-    this.value + suffix
-  );
-}
-// - CSS Variables - https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
-//       Updating CSS with JavaScript
-//     - CSS filter property - https://developer.mozilla.org/en-US/docs/Web/CSS/filter
-//     - HTMLElement.dataset - https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset - Takes everything on the data-'set' and puts in an object.
-//     - Element: mousemove event - https://developer.mozilla.org/en-US/docs/Web/API/Element/mousemove_event
-//     -document.documentElement selects the entire HTML element
+const inputImageBoxEle = document.querySelector(".image");
+
+const inputImgEle = document.querySelector(".image-slide");
+
+inputWidthEle.addEventListener('input',()=>{
+  inputImageBoxEle.style.width = inputWidthEle.value + "rem";
+})
+
+inputRadiusEle.addEventListener('input',()=>{
+  inputImgEle.style.borderRadius = inputRadiusEle.value + "px";
+})
+
+inputColorEle.addEventListener('input',()=>{
+  // console.log(inputColorEle.value)
+  inputImgEle.style.borderColor = inputColorEle.value;
+} )
+
+inputPaddingEle.addEventListener('input',()=>{
+  inputImgEle.style.borderWidth = inputPaddingEle.value + "px";
+})
+
+inputBlurEle.addEventListener('input',()=>{
+  console.log(inputBlurEle.value)
+  inputImageBoxEle.style.filter = `blur(${inputBlurEle.value+"px"})`;
+})
